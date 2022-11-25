@@ -25,7 +25,7 @@
     3. Allow percentage-based heights in the application
   */
   html, body {
-    height: 100%;
+    min-height: 100vh;
   }
   /*
     Typographic tweaks!
@@ -76,14 +76,14 @@
   }
 
   .card {
-    --card-padding-y: 1.5rem;
+    --card-padding-y: 1rem;
     --card-padding-x: 1rem;
 
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     background-color: var(--clr-neutral-100);
     border-radius: 1rem;
     line-height: 1.1;
-    margin: 2rem;
-    max-width: 315px;
+    max-width: 21rem;
     overflow: hidden;
     padding: var(--card-padding-y) var(--card-padding-x);
     text-align: center;
@@ -97,10 +97,14 @@
   .card__content {
     display: grid;
     gap: 1rem;
-    padding: var(--card-padding-y) var(--card-padding-x);
+    padding: 1.5rem var(--card-padding-x)
   }
 
   .card__title {
     color: var(--clr-neutral-900);
     font-size: 1.5rem
+  }
+
+  .card p {
+    letter-spacing: .05rem;
   }

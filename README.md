@@ -40,14 +40,14 @@ And to be fair `custom css properties` are awesome!
 
 ```css
 .card {
-    --card-padding-y: 1.5rem;
+    --card-padding-y: 1rem;
     --card-padding-x: 1rem;
 
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     background-color: var(--clr-neutral-100);
     border-radius: 1rem;
     line-height: 1.1;
-    margin: 2rem;
-    max-width: 315px;
+    max-width: 21rem;
     overflow: hidden;
     padding: var(--card-padding-y) var(--card-padding-x);
     text-align: center;
