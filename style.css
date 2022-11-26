@@ -76,8 +76,7 @@
   }
 
   .card {
-    --card-padding-y: 1rem;
-    --card-padding-x: 1rem;
+    --card-padding: 1rem;
 
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     background-color: var(--clr-neutral-100);
@@ -85,7 +84,7 @@
     line-height: 1.1;
     max-width: 21rem;
     overflow: hidden;
-    padding: var(--card-padding-y) var(--card-padding-x);
+    padding: var(--card-padding);
     text-align: center;
   }
 
@@ -97,12 +96,13 @@
   .card__content {
     display: grid;
     gap: 1rem;
-    padding: 1.5rem var(--card-padding-x)
+    padding-block: var(--card-padding);
+    padding-inline: 1.5rem ;
   }
 
   .card__title {
     color: var(--clr-neutral-900);
-    font-size: 1.5rem
+    font-size: 1.5rem;
   }
 
   .card p {
