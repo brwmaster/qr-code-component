@@ -96,13 +96,13 @@
   .card__content {
     display: grid;
     gap: 1rem;
-    padding-block: var(--card-padding)
-    padding-inline: 1.5rem 
+    padding-block: var(--card-padding);
+    padding-inline: 1.5rem ;
   }
 
   .card__title {
     color: var(--clr-neutral-900);
-    font-size: 1.5rem
+    font-size: 1.5rem;
   }
 
   .card p {
